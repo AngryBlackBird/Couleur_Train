@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Le petit train </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+    <section class="left">
+        <header>
+            <h1 id="site-title">Le petit train</h1>
+            <p class="subtitle">Mettre à jour les variables CSS avec JS</p>
+        </header>
+        <div class="parameters">
+            <div class="image">
+                <h3>Image</h3>
+                <div class="param grayscale">
+                    <label for="grayscale">Niveaux de gris</label>
+                    <input type="range" id="grayscale" min="0" max="100" value="0" data-sizing="%">
+                </div>
+                <div class="param hue">
+                    <label for="hue">Teinte</label>
+                    <input type="range" id="hue" min="0" max="360" value="0" oninput="showVal(nivHue.value)" data-sizing="deg">
+                </div>
+            </div>
+            <div class="shadow">
+                <h3>Ombre</h3>
+                <div class="param spacing">
+                    <label for="spacing">Espacement</label>
+                    <input type="range" id="spacing" min="10" max="60" value="10"  oninput="showVal(nivGris.value)" data-sizing="px">
+                </div>
+                <div class="param blur">
+                    <label for="blur">Brouiller</label>
+                    <input type="range" id="blur" min="0" max="20" value="0"  oninput="showVal(nivGris.value)" data-sizing="px">
+                </div>
+                <div class="param base">
+                    <label for="base">Couleur de base</label>
+                    <input type="color" id="base" value="#253a3b">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="right">
+        <img src="assets/images/yiran-ding.jpg" alt="The Little Train" id="sample-image">
+    </section>
+    <footer>
+        <p>&copy; Youcode-Youssoufia</p>
+    </footer>
+
+    <script src="monscript.js"></script>
+
+
+</body>
+
+</html>
